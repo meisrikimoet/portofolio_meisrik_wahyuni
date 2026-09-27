@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    background-color: #6B2737;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 2px solid #FFFFFF;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 60px;
+    gap: 50px;
+    background-color: #6B2737;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.profile-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.main-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 35px;
+    border: 1px solid #F7EDE2;
+    display: block;
+}
+
+.main-photo-area {
+    text-align: center;
+    transform: translateX(30px);
+}
+
+.main-photo-area h3 {
+    margin-top: 15px;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 50px;
+}
+
+.second-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #F7EDE2;
+}
+
+#tentang {
+    padding: 80px 60px;
+    background-color: #F7EDE2;
+    color: #222;
+}
+
+#tentang h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#tentang > p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.about-photos {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    float: right;
+    margin-top: -250px;
+}
+
+.about-photo {
+    width: 185px;
+    height: 185px;
+    padding: 6px;
+    border: 2px dashed #6B2737;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#keahlian {
+    padding: 80px 60px;
+}
+
+#keahlian h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.skill-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skil-card {
+    flex: 1;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.skil-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.skill-content {
+    padding: 20px;
+}
+
+.skil-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skil-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#proyek {
+    padding: 80px 60px;
+}
+
+#proyek h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#kontak {
+    padding: 80px 60px;
+    background-color: #F7EDE2;
+    color: #222;
+    text-align: center;
+}
+
+#kontak h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-card {
+    flex: 1;
+    padding: 30px 20px;
+    border: 2px solid #6B2737;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.contact-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+}
+
+.contact-card a {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #6B2737;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.contact-thanks {
+    margin-top: 35px;
+    font-style: italic;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 70px 25px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    .profile-info {
+        text-align: left;
+    }
+
+    .hero-image {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 25px;
+    }
+
+    .main-photo-area {
+        transform: none;
+    }
+
+    .main-photo,
+    .second-photo {
+        width: 280px;
+        height: 280px;
+    }
+
+    #tentang {
+        padding: 60px 25px;
+    }
+
+    #tentang > p {
+        max-width: 100%;
+    }
+
+    .about-photos {
+        float: none;
+        margin-top: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #keahlian {
+        padding: 60px 25px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skil-card {
+        width: 100%;
+    }
+
+    #proyek {
+        padding: 60px 25px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    #kontak {
+        padding: 60px 25px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
